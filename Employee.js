@@ -1,5 +1,3 @@
-
-
 class Employee {
     constructor(name, email, id) {
       this.id = id;
@@ -8,13 +6,16 @@ class Employee {
     }
 
     getName(data){
-        return data.name;
+        Employee.name = data.name;
+        return Employee.name;
     }
     getId(data){
-        return data.id;
+        Employee.id = data.id;
+        return Employee.id;
     }
     getEmail(data){
-        return data.email;
+        Employee.email = data.email;
+        return Employee.email;
     }
   
     // printInfo() {
