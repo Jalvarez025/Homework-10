@@ -6,15 +6,16 @@ class Employee {
     }
 
     getName(data){
-        Employee.name = data.name;
+        new Employee.name = data.name;
+        console.log('Employee name: ' + Employee.name)
         return Employee.name;
     }
     getId(data){
-        Employee.id = data.id;
+        new Employee.id = data.id;
         return Employee.id;
     }
     getEmail(data){
-        Employee.email = data.email;
+        new Employee.email = data.email;
         return Employee.email;
     }
   

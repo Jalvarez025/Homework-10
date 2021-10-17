@@ -5,9 +5,7 @@ const index = require("./index");
 describe("Employee class", () => {
     describe("getName method", () => {
         it("returns employee name", () => {
-            const text = 'Jesse Alvarez';
-
-            const obj = new Employee(data.name);
+            const obj = new Employee.name;
 
             expect(obj.data.name).toEqual(data.name);
         });
