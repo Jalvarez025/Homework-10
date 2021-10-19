@@ -1,3 +1,5 @@
+const index = require("./index");
+
 class Employee {
     constructor(name, email, id) {
       this.id = id;
@@ -10,14 +12,14 @@ class Employee {
         console.log('Employee name: ' + Employee.name)
         return Employee.name;
     }
-    getId(data){
-        new Employee.id = data.id;
-        return Employee.id;
-    }
-    getEmail(data){
-        new Employee.email = data.email;
-        return Employee.email;
-    }
+    // getId(data){
+    //     new Employee.id = data.id;
+    //     return Employee.id;
+    // }
+    // getEmail(data){
+    //     new Employee.email = data.email;
+    //     return Employee.email;
+    // }
   
     // printInfo() {
     //   console.log(`This employee's name is ${this.name}`);

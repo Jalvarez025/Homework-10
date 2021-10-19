@@ -1,14 +1,37 @@
 
-const Employee = require("./Employee");
+const Employee = require('./Employee');
 const index = require("./index");
 
-describe("Employee class", () => {
-    describe("getName method", () => {
-        it("returns employee name", () => {
-            const obj = new Employee.name;
+describe('Employee class', () => {
+    describe('getName method', () => {
+        it('returns employee name', (data) => {
+            //data.name = new Employee.name;
 
-            expect(obj.data.name).toEqual(data.name);
+            new Employee = {
+                name: 'Jesse'
+            };
+
+            data = {
+                name: 'Jesse'
+            };
+
+            expect(data.name).toEqual(Employee.name);
         });
+
+        // it('returns employee email', () => {
+        
+        // });
+
+        // it('returns employee Id', () => {
+       
+        // });
+
+        // it('returns employee role', () => {
+        
+        // });
+
+
+
 
     });
 
