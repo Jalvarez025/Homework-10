@@ -7,19 +7,20 @@ class Employee {
       this.email = email;
     }
 
-    getName(data){
-        new Employee.name = data.name;
-        console.log('Employee name: ' + Employee.name)
-        return Employee.name;
+    getName(){
+        return this.name;
     }
-    // getId(data){
-    //     new Employee.id = data.id;
-    //     return Employee.id;
-    // }
-    // getEmail(data){
-    //     new Employee.email = data.email;
-    //     return Employee.email;
-    // }
+    getId(){
+        return this.id;
+    }
+    getEmail(){
+        return this.email;
+    }
+    getRole(){
+      const role = 'Employee';
+      this.role = role;
+      return this.role;
+    }
   
     // printInfo() {
     //   console.log(`This employee's name is ${this.name}`);

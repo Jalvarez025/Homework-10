@@ -4,31 +4,38 @@ const index = require("./index");
 
 describe('Employee class', () => {
     describe('getName method', () => {
-        it('returns employee name', (data) => {
-            //data.name = new Employee.name;
+        it('returns employee name', () => {
+            let name = 'Jesse';
 
-            new Employee = {
-                name: 'Jesse'
-            };
+            const employee = new Employee(name,'jalvarez025@me.com', 1234)
 
-            data = {
-                name: 'Jesse'
-            };
-
-            expect(data.name).toEqual(Employee.name);
+            expect(employee.getName()).toEqual(name);
         });
 
-        // it('returns employee email', () => {
-        
-        // });
+        it('returns employee email', () => {
+            let email = 'jalvarez025@me.com';
 
-        // it('returns employee Id', () => {
-       
-        // });
+            const employee = new Employee('Jesse', email, 1234)
 
-        // it('returns employee role', () => {
+            expect(employee.getEmail()).toEqual(email);
+        });
+
+        it('returns employee Id', () => {
+            let id = 1234;
+
+            const employee = new Employee('Jesse','jalvarez025@me.com', id)
+
+            expect(employee.getId()).toEqual(id);
+        });
+
+        it('returns employee role', () => {
+            let role = 'Employee';
+
+            const employee = new Employee('Jesse', 'jalvarez025@me.com', 1234)
+
+            expect(employee.getRole()).toEqual(role);
         
-        // });
+        });
 
 
 
