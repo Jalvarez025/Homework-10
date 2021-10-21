@@ -21,11 +21,11 @@ const askQuestions = () => {
             name: 'id',
             message: 'Employee id?',
         },
-        // {
-        //     type: 'input',
-        //     name: 'description',
-        //     message: 'Project description?',
-        // },
+        {
+            type: 'input',
+            name: 'role',
+            message: 'Employee role?',
+        },
         // {
         //     type: 'input',
         //     name: 'license',
@@ -55,7 +55,25 @@ const askQuestions = () => {
 }
 
 function generateHtml(data) {
-    return `${data.name}
+   // if(data.role == 'Engineer'){
+
+   // }
+
+    return `
+    <html>
+<head>
+    <title>Employee Registration</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<header>
+<h1 class="text-white d-flex justify-content-center align-items-center" style="background-color:red; height:175px">My Team</h1>
+</header>
+
+
+</html>
+    ${data.name}
     ${data.email}
     ${data.id}`;
 
